@@ -34,7 +34,7 @@ public class EventService {
 		return new EventDTO(entity);
 		}
 		catch (EntityNotFoundException e) {
-			throw new ResourceNotFoundException("Id not found" + id);
+			throw new ResourceNotFoundException("Id not found: " + id);
 		}
 	}
 	
